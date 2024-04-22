@@ -1,86 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>See World With Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        
-        .btn {
-            padding: 10px 20px;
-            background-color: #555;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-transform: uppercase;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-        
-        .location {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>See World With Us</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    /* Add more CSS styles for the body, footer, and other elements */
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>See World With Us</h1>
-    <a href="#" class="btn">Home</a>
-    <a href="#" class="btn">Travel</a>
-    <a href="#" class="btn">Book Flights</a>
-</header>
-
-<div class="container">
-    <div class="location">
-        <h2>Paris, France</h2>
-        <img src="paris.jpg" alt="Paris">
-        <p>Experience the charm of Paris with its iconic Eiffel Tower and delicious croissants.</p>
+    <nav>
+      <a href="#home" class="button">Home</a>
+      <a href="#travel" class="button">Travel</a>
+      <a href="#book-flights" class="button">Book Flights</a>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>Welcome to See World With Us</h2>
+    <p>Your gateway to luxurious travel experiences around the globe.</p>
+  </section>
+  <section id="travel">
+    <h2>Explore our Exotic Destinations</h2>
+    <div class="destination">
+      <img src="destination1.jpg" alt="Destination 1">
+      <h3>Destination 1</h3>
+      <p>Description of destination 1.</p>
+      <!-- Add more destinations with images and descriptions -->
     </div>
-    
-    <div class="location">
-        <h2>Tokyo, Japan</h2>
-        <img src="tokyo.jpg" alt="Tokyo">
-        <p>Explore the bustling streets of Tokyo and indulge in authentic sushi.</p>
-    </div>
-</div>
-
-<footer>
-    &copy; 2021 See World With Us
-</footer>
-
-<script>
-    // Add JavaScript functionality here, if needed
-</script>
-
+  </section>
+  <section id="book-flights">
+    <h2>Book Your Flight</h2>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="destination">Select Destination:</label>
+        <select id="destination" name="destination">
+          <option value="destination1">Destination 1</option>
+          <!-- Add more destination options -->
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2024 See World With Us. All rights reserved.</p>
+  </footer>
+  <script>
+    // JavaScript code goes here
+    // You can add any JavaScript functionality as needed
+  </script>
 </body>
 </html>
